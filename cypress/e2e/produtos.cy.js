@@ -14,7 +14,7 @@ describe('Funcionalidade Página de Produtos', () => {
             .contains('Aero Daily Fitness Tee')
             .click()
     });
-    it.only('Deve adicionar produto ao carrinho', () => {
+    it('Deve adicionar produto ao carrinho', () => {
         var quantidade = 10
         cy.get('[class="product-block grid"]')
             .contains('Aero Daily Fitness Tee').click()
