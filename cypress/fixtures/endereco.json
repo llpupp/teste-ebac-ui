@@ -1,0 +1,43 @@
+[
+{
+    "nome":"Ana",
+    "sobrenome":"Lucia",
+    "empresa":"EBAC",
+    "endereco": "Av.Brasil",
+    "numero": "3001",
+    "país": "Brasil",
+    "cidade":"Sorocaba",
+    "estado":"São Paulo",
+    "cep":"18298222",
+    "telefone":"01534622022",
+    "email":"teste@teste.com"
+    
+},
+{
+    "nome":"Regina",
+    "sobrenome":"Stela",
+    "empresa":"EBAC",
+    "endereco": "Av.Portugal",
+    "numero": "300",
+    "país": "Brasil",
+    "cidade":"Sorocaba",
+    "estado":"São Paulo",
+    "cep":"18398200",
+    "telefone":"01534642000",
+    "email":"rest@teste.com"
+},
+{
+    "nome":"Ana",
+    "sobrenome":"Luz",
+    "empresa":"EBAC",
+    "endereco": "Av.Canada",
+    "numero": "250",
+    "país": "Brasil",
+    "cidade":"Sorocaba",
+    "estado":"São Paulo",
+    "cep":"18400000",
+    "telefone":"01534666000",
+    "email":"teste@teste.com"
+}
+
+]
