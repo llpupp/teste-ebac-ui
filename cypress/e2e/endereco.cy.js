@@ -12,8 +12,8 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
     });
 
     it('Deve fazer cadastro de faturamento com sucesso', () => {
-        EnderecoPage.editarEnderecoFaturamento('Flavio', 'Cavalcante', 'Embraer', 'Brasil', 'Av Brasil', '3100', 'Sorocaba', 'São Paulo', '18098220', '015-3428.2022', 'flavio.cavalcante@embraer.com')
-        cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso')
+        EnderecoPage.editarEnderecoFaturamento('Jose', 'Dalecio', 'Google', 'Brasil', 'Av Portugal', '100', 'Sorocaba', 'São Paulo', '18598-220', '015-3428.1000', 'jose.dalecio@google.com')
+        cy.get('.woocommerce-message').should('contain','Endereço alterado com sucesso.')
     });
 
     it('Deve fazer cadastro de faturamento com sucesso - Usando Arquivo de Dados', () => {
@@ -33,5 +33,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         )
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso')
     });
+
+    
 
 });
