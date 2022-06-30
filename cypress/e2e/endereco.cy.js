@@ -33,7 +33,23 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         )
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso')
     });
-
-    
+    it('Deve fazer cadastro de endereço de entrega com sucesso', () => {
+        EnderecoPage.editarEnderecoEntrega('Flávio', 'Araújo', 'Google', 'Brasil', 'Av.Brasil', '3100', 'São José do Rio Preto', 'São Paulo', '19450000')
+        cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso')
+    });
+    it('Deve fazer cadastro de endereço de entrega com sucesso - Usando arquivo de dados', () => {
+        EnderecoPage.editarEnderecoEntrega(
+            dadosEndereco[0].nome,
+            dadosEndereco[0].sobrenome,
+            dadosEndereco[0].empresa,
+            dadosEndereco[0].país,
+            dadosEndereco[0].endereco,
+            dadosEndereco[0].numero,
+            dadosEndereco[0].cidade,
+            dadosEndereco[0].estado,
+            dadosEndereco[0].cep
+            )
+        cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso')
+    });
 
 });
